@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <parameter name="browser" value="firefox" />
+    <test name="Regression Test in chrome">
+        <classes>
+            <class name="tests.CreateTokenTest">
+                <methods>
+                    <include name="createToken_functionalTest" />
+                    <include name="createToken_performanceTest" />
+                </methods>
+            </class>
+            <class name="tests.CreateBookingTest">
+                <methods>
+                    <include name="createBooking_functionalTest" />
+                    <include name="createBooking_performanceTest" />
+                    <include name="createBooking_contractTest"/>
+                </methods>
+            </class>
+            <class name="tests.GetBookingCreatedByID">
+                <methods>
+                    <include name="getCreatedBookingById_functionalTest" />
+                    <include name="getCreatedBookingById_performanceTest" />
+                    <include name="getCreatedBookingById_contractTest"/>
+                </methods>
+            </class>
+            <class name="tests.PutBookingTest">
+                <methods>
+                    <include name="createToken" />
+                    <include name="createBooking" />
+                    <include name="putCreatedBooking_functionalTest"/>
+                    <include name="putCreatedBooking_performanceTest"/>
+                    <include name="putCreatedBooking_contractTest"/>
+                </methods>
+            </class>
+            <class name="tests.EndToEndTest">
+                <methods>
+                    <include name="createToken"/>
+                    <include name="createBooking"/>
+                    <include name="getCreatedBookingById"/>
+                    <include name="putCreatedBooking"/>
+                    <include name="deleteCreatedBooking"/>
+                    <include name="getDeletedBookingById"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

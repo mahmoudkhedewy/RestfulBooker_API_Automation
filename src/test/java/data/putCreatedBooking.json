@@ -1,0 +1,11 @@
+{
+  "firstname" : "Mohamed",
+  "lastname" : "Anter",
+  "totalprice" : 200,
+  "depositpaid" : false,
+  "bookingdates" : {
+    "checkin" : "2020-01-01",
+    "checkout" : "2020-01-01"
+  },
+  "additionalneeds" : "Breakfast"
+}'

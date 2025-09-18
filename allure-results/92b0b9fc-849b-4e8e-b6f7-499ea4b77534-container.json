@@ -1,0 +1,1 @@
+{"uuid":"92b0b9fc-849b-4e8e-b6f7-499ea4b77534","name":"tests.RestfulAPIs_Test","children":["d4d0fa98-4a51-4c51-b7e9-ac6738c18b50"],"befores":[{"name":"setRestfulAPIs","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758096381472,"stop":1758096381790}],"afters":[],"start":1758096381441,"stop":1758096384289}
